@@ -28,6 +28,9 @@ def inside(head):
     """Return True if head inside boundaries."""
     return -200 < head.x < 190 and -200 < head.y < 190
 
+def random_move():
+    moves = [vector(10, 0), vector(-10, 0), vector(0, 10), vector(0. -10)]
+    return choice(moves)
 
 def move():
     """Move snake forward one segment."""
